@@ -200,29 +200,55 @@ const HeroSection = () => {
                 <Typography variant="body1" style={{ marginTop: '50px' }}>
                   <Box color="white">You can find us on:</Box>
                 </Typography>
-                <Box mt="10px" display="flex" alignItems="center">
+                <Box
+                  mt="10px"
+                  display="flex"
+                  alignItems="center"
+                  flexWrap="wrap"
+                >
                   <Box display="flex" alignItems="center">
                     <YouTube htmlColor="white" fontSize="medium" />
                     <Typography style={{ marginLeft: '5px' }}>
-                      <Box color="white" fontWeight="bold">
-                        YouTube
-                      </Box>
+                      <a
+                        href="https://www.youtube.com/channel/UC6VmUjxdGO78fZ_Wc3hx4UA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'inherit', textDecoration: 'none' }}
+                      >
+                        <Box color="white" fontWeight="bold">
+                          YouTube
+                        </Box>
+                      </a>
                     </Typography>
                   </Box>
                   <Box display="flex" alignItems="center" mx="20px">
                     <Twitter htmlColor="white" fontSize="medium" />
                     <Typography style={{ marginLeft: '5px' }}>
-                      <Box color="white" fontWeight="bold">
-                        Twitter
-                      </Box>
+                      <a
+                        href="https://instagram.com/mentalhealth_6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'inherit', textDecoration: 'none' }}
+                      >
+                        <Box color="white" fontWeight="bold">
+                          Twitter
+                        </Box>
+                      </a>
                     </Typography>
                   </Box>
                   <Box display="flex" alignItems="center">
                     <Instagram htmlColor="white" fontSize="medium" />
                     <Typography style={{ marginLeft: '5px' }}>
-                      <Box color="white" fontWeight="bold">
-                        Instagram
-                      </Box>
+                      <a
+                        href="https://instagram.com/mentalhealth_6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'inherit', textDecoration: 'none' }}
+                      >
+                        <Box color="white" fontWeight="bold">
+                          Instagram
+                        </Box>
+                      </a>
                     </Typography>
                   </Box>
                 </Box>
