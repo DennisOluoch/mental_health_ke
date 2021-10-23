@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en">
+
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <title>{% block title %}Mental Health Kenya{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+        <meta name="description" content="Maseno Mental Health is
+            addresses issues of mental health and depresssion
+            amoung university students. By doing so, we believe that we would be
+            sensitizing more on the fact that university students are also
+            adversely affected and mitigations should be put into consideration by
+            concerned stakeholders." />
+        <meta name="keywords" content="journalism, mental health, depression, anxiety" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Maseno Mental Health" />
+        <meta name="application-name" content="Maseno Mental Health" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+        <meta name="theme-color" content="#fff" />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Home | Maseno Mental Health">
+        <meta property="og:image" content="https://masenomental.com/social.png">
+        <meta property="og:description" content="Maseno Mental Health is
+        addresses issues of mental health and depresssion
+        amoung university students. By doing so, we believe that we would be
+        sensitizing more on the fact that university students are also
+        adversely affected and mitigations should be put into consideration by
+        concerned stakeholders.">
+        <meta property="og:site_name" content="Maseno Mental Health">
+        <meta property="og:locale" content="en_US">
+        <link href="favicon_144.png" rel="shortcut icon" type="image/png" />
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+        {{ encore_entry_link_tags('index') }}
         {% endblock %}
 
         {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
+        {{ encore_entry_script_tags('index') }}
         {% endblock %}
     </head>
-    <body>
+
+    <body style="margin: 0;">
         {% block body %}{% endblock %}
     </body>
+
 </html>

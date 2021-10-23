@@ -3,5 +3,7 @@
     "activityBar.background": "#4B2207",
     "titleBar.activeBackground": "#69300A",
     "titleBar.activeForeground": "#FEFAF7"
-  }
+  },
+  "restructuredtext.pythonRecommendation.disabled": true,
+  "restructuredtext.languageServer.disabled": true
 }

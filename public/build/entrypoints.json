@@ -1,0 +1,14 @@
+{
+  "entrypoints": {
+    "index": {
+      "js": [
+        "/build/875.b85c4429.js",
+        "/build/index.bee1de3e.js"
+      ]
+    }
+  },
+  "integrity": {
+    "/build/875.b85c4429.js": "sha384-eDqfIfW0dcG5G9jzZrOXYQ3OKSz2NCGWs20auoBY+vbzHBtBdrY9Gv6KZpqhnBvi",
+    "/build/index.bee1de3e.js": "sha384-9DN5ToDKgyE8uizuTN5QUc46RNeS+WfUU6zFbVIIKgmONWRgZWtTlZxjCbSxApMz"
+  }
+}
