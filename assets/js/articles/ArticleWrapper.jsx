@@ -14,6 +14,7 @@ import { useLocation } from 'react-router'
 const useStyles = makeStyles(theme => ({
   title: {
     color: '#292929',
+    fontSize: '1.6rem',
     [theme.breakpoints.up('md')]: {
       fontSize: '45px',
       lineHeight: '60px',
