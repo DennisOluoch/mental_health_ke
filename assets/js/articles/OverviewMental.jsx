@@ -1,10 +1,11 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import photo from '../../images/mental-problems-article.jpg'
 
 const OverviewMental = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={photo}>
       <Typography>
         Mental health can have variances in definitions depending on an
         individual’s understanding of what Mental health really is. However, the

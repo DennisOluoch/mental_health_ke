@@ -2,13 +2,13 @@
   "entrypoints": {
     "index": {
       "js": [
-        "/build/875.b85c4429.js",
-        "/build/index.3595f156.js"
+        "/build/804.9fc1b3df.js",
+        "/build/index.b9e1acb1.js"
       ]
     }
   },
   "integrity": {
-    "/build/875.b85c4429.js": "sha384-eDqfIfW0dcG5G9jzZrOXYQ3OKSz2NCGWs20auoBY+vbzHBtBdrY9Gv6KZpqhnBvi",
-    "/build/index.3595f156.js": "sha384-bSXAKLCylZnICk9AilHYmJwnz5zyA5oO136kN/CoypGognfdq9XW/3IDqgvyMkmK"
+    "/build/804.9fc1b3df.js": "sha384-vtEcDdJdNgJ0fiD16TEmHRgYwaFgtewAyn47ozv+P/RkycCYgx3sy68W0QL9lS/o",
+    "/build/index.b9e1acb1.js": "sha384-osGYrPRgWOLj25h4ty9sAwI7G/TgSeWXTZqFjleBhHu3t5UR/P9pjyX4AxL3+9I1"
   }
 }

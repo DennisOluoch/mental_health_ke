@@ -1,10 +1,11 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import photo from '../../images/mindfullness-article.jpg'
 
 const MentalAwareness = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={photo}>
       <Typography>
         Mental health awareness is the recognition that our psychological
         well-being is an important part of our own health,productivity and

@@ -1,10 +1,11 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import photo from '../../images/mood-article.jpg'
 
 const MoodDisorder = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={photo}>
       <Typography>
         Moods are the emotions that affect people each and every day, sometimes
         people are sad and other time they are happy. People may be sad and

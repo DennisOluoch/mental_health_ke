@@ -5,11 +5,17 @@ import {
   Grid,
   Typography,
   makeStyles,
+  IconButton,
+  Menu,
+  MenuItem,
+  ListItemIcon,
+  ListItemText,
 } from '@material-ui/core'
 import { deepPurple } from '@material-ui/core/colors'
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { useLocation } from 'react-router'
+import { FilterNoneTwoTone, MoreVert, ShareTwoTone } from '@material-ui/icons'
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -48,10 +54,39 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const ArticleWrapper = ({ children }) => {
+const ArticleWrapper = ({ children, themePhoto }) => {
   const classes = useStyles()
 
   const { state } = useLocation()
+
+  const [anchorEl, setAnchorEl] = useState(null)
+
+  const handleMoreOptionsClick = e => {
+    setAnchorEl(e.currentTarget)
+  }
+
+  const handleMoreOptionsClose = () => {
+    setAnchorEl(null)
+  }
+
+  const handleCopyLink = () => {
+    window.navigator.clipboard.writeText(
+      `${window.location.origin}/article/${state.slug}`
+    )
+
+    handleMoreOptionsClose()
+  }
+
+  const handleShareClick = () => {
+    if (window.navigator.share) {
+      window.navigator.share({
+        title: state.title,
+        text: state.intro,
+        url: `${window.location.origin}/article/${state.slug}`,
+      })
+    }
+    handleMoreOptionsClose()
+  }
 
   return (
     <Container style={{ marginTop: '70px' }}>
@@ -62,29 +97,74 @@ const ArticleWrapper = ({ children }) => {
               {state.title}
             </Box>
           </Typography>
-          <Box my="20px" display="flex" alignItems="center">
-            <Avatar
-              style={{
-                backgroundColor: deepPurple[500],
-                width: 56,
-                height: 56,
-              }}
-            >
-              {state.initials}
-            </Avatar>
-            <Box ml="10px" display="flex" flexDirection="column">
-              <Typography variant="body1" color="textPrimary">
-                <Box fontWeight="bold">{state.authorName}</Box>
-              </Typography>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                style={{ marginTop: '5px' }}
+          <Box
+            my="20px"
+            display="flex"
+            alignItems="center"
+            justifyContent="space-between"
+          >
+            <Box display="flex" alignItems="center">
+              <Avatar
+                style={{
+                  backgroundColor: deepPurple[500],
+                  width: 56,
+                  height: 56,
+                }}
               >
-                15 Oct, 2021
-              </Typography>
+                {state.initials}
+              </Avatar>
+              <Box ml="10px" display="flex" flexDirection="column">
+                <Typography variant="body1" color="textPrimary">
+                  <Box fontWeight="bold">{state.authorName}</Box>
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  style={{ marginTop: '5px' }}
+                >
+                  15 Oct, 2021
+                </Typography>
+              </Box>
             </Box>
+            <IconButton
+              aria-label="options"
+              aria-haspopup="true"
+              color="default"
+              aria-controls="more-options"
+              onClick={handleMoreOptionsClick}
+            >
+              <MoreVert />
+            </IconButton>
+            <Menu
+              id="more-options"
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleMoreOptionsClose}
+            >
+              <MenuItem onClick={handleCopyLink}>
+                <ListItemIcon style={{ minWidth: '30px' }}>
+                  <FilterNoneTwoTone fontSize="small" />
+                </ListItemIcon>
+                <ListItemText>Copy link</ListItemText>
+              </MenuItem>
+              {window.navigator.share && (
+                <MenuItem onClick={handleShareClick}>
+                  <ListItemIcon style={{ minWidth: '30px' }}>
+                    <ShareTwoTone fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText>Share</ListItemText>
+                </MenuItem>
+              )}
+            </Menu>
           </Box>
+          {themePhoto && (
+            <img
+              src={themePhoto}
+              alt=""
+              style={{ width: '100%', objectFit: 'cover' }}
+            />
+          )}
           <Box pt="10px" className={classes.content}>
             {children}
           </Box>
@@ -96,6 +176,11 @@ const ArticleWrapper = ({ children }) => {
 
 ArticleWrapper.propTypes = {
   children: PropTypes.element.isRequired,
+  themePhoto: PropTypes.string,
+}
+
+ArticleWrapper.defaultProps = {
+  themePhoto: null,
 }
 
 export default ArticleWrapper

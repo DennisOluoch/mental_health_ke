@@ -1,10 +1,11 @@
 import { List, Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import mentalHelpPhoto from '../../images/mental-help-article.jpg'
 
 const MentalStigma = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={mentalHelpPhoto}>
       <Typography>
         Globally, more than 70% of people with mental illness receive no
         treatment from health care staff. Factors increasing the likelihood of

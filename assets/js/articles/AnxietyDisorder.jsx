@@ -1,10 +1,11 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import photo from '../../images/anxiety-article.jpg'
 
 const AnxietyDisorder = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={photo}>
       <Typography>
         An anxiety disorder is a type of mental health condition. If you have an
         anxiety disorder, you may respond to certain things and situations with

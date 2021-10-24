@@ -73,17 +73,14 @@ const NavBar = () => {
             >
               About
             </Box>
-            <Box
-              onClick={e => {
-                if (pathname !== '/') {
-                  return
-                }
-                handleScrollToHopeSection(e)
-              }}
-              className={classes.navLink}
-            >
-              Stories of Hope
-            </Box>
+            {pathname === '/' && (
+              <Box
+                onClick={handleScrollToHopeSection}
+                className={classes.navLink}
+              >
+                Stories of Hope
+              </Box>
+            )}
           </Box>
         </Typography>
       </Toolbar>

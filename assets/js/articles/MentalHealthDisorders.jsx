@@ -1,6 +1,7 @@
 import { Box, List, Typography, makeStyles } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import photo from '../../images/intro-101-article.jpg'
 
 const useStyles = makeStyles(theme => ({
   paragraph: {
@@ -27,7 +28,7 @@ const MentalHealthDisorders = () => {
   const classes = useStyles()
 
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={photo}>
       <Typography>
         As the name suggests, mental health disorders are illness that affect
         the cognitive factor thus affecting an individual’s mood, feeling,

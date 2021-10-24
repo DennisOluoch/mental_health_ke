@@ -1,10 +1,11 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import depressionPhoto from '../../images/depression-article.jpg'
 
 const Depression = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={depressionPhoto}>
       <Typography>
         Mental health includes our emotional, psychological, and social
         well-being. It affects how we think, feel, and act. It also helps

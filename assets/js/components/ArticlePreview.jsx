@@ -61,7 +61,7 @@ const ArticlePreview = ({
       <Box mt="15px">
         <Link
           to={`/article/${slug}`}
-          state={{ authorName, title, initials }}
+          state={{ authorName, title, initials, intro, slug }}
           className={classes.link}
         >
           <Typography variant="body1">

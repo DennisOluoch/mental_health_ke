@@ -1,10 +1,11 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import photo from '../../images/mental-support-article.jpg'
 
 const MentalSupport = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={photo}>
       <Typography>
         In the recent years, there has been more increase in the acknowledgement
         of the important role of mental health. As it plays a crucial role in

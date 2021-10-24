@@ -2,10 +2,11 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import books from '../../images/career-article.jpg'
 
 const CareerStudies = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={books}>
       <Typography>
         While other young people think pursuing a degree in one of the best
         universities in the country is a big achievement, some of the young
