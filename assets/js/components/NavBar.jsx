@@ -48,6 +48,7 @@ const NavBar = () => {
     <AppBar
       position="static"
       elevation={0}
+      id="back-to-top-anchor"
       style={{ color: 'white', backgroundColor: '#181E4E' }}
     >
       <WhoAreWeDialog open={openDialog} setOpen={setOpenDialog} />
