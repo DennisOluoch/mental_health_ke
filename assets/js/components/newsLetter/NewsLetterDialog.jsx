@@ -76,7 +76,6 @@ const NewsLetterDialog = ({ open, setOpen }) => {
             flexDirection="column"
             alignItems="center"
             justifyContent="center"
-            width="300px"
           >
             <TextField
               variant="outlined"

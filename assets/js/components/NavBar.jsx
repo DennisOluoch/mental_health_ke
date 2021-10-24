@@ -52,7 +52,7 @@ const NavBar = () => {
     >
       <WhoAreWeDialog open={openDialog} setOpen={setOpenDialog} />
       <Toolbar style={{ justifyContent: 'space-around' }}>
-        <Typography variant="h5" style={{ padding: '5px 0' }}>
+        <Typography variant="h5" style={{ padding: '5px' }}>
           <Link to="/">
             <img
               src={smallScreen ? smallScreenLogo : logo}
