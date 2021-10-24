@@ -71,7 +71,7 @@ const ContactUs = () => {
             <Twitter fontSize="medium" />
             <Typography style={{ marginLeft: '5px' }}>
               <a
-                href="https://instagram.com/mentalhealth_6"
+                href="https://twitter.com/group_valhalla"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: 'inherit', textDecoration: 'none' }}
