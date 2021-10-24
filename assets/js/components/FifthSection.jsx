@@ -8,7 +8,7 @@ import NewsLetterDialog from './newsLetter/NewsLetterDialog'
 
 const useStyles = makeStyles(theme => ({
   text: {
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '1.4rem',
     },
   },

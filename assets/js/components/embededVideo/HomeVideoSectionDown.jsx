@@ -5,7 +5,7 @@ import VideoPaper from './VideoPaper'
 const useStyles = makeStyles(theme => ({
   container: {
     marginTop: '50px',
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       display: 'none',
     },
   },

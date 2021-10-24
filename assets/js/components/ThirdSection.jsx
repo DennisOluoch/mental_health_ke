@@ -5,13 +5,13 @@ import holdingHands from '../../images/holding-hands.jpg'
 
 const useStyles = makeStyles(theme => ({
   textSizeSmall: {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: '2rem',
     },
   },
   needHelp: {
     position: 'absolute',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       position: 'unset',
     },
   },
@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     position: 'absolute',
     bottom: '30%',
     left: '5%',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       width: 'unset',
       left: 0,
       bottom: 0,
@@ -28,14 +28,14 @@ const useStyles = makeStyles(theme => ({
     },
   },
   hideBgImages: {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
   },
   container: {
     height: '700px',
     padding: '10px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       height: '400px',
       display: 'flex',
       flexDirection: 'column',

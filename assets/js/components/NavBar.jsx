@@ -29,7 +29,7 @@ const NavBar = () => {
 
   const { pathname } = useLocation()
 
-  const smallScreen = useMediaQuery(useTheme().breakpoints.down('md'))
+  const smallScreen = useMediaQuery(useTheme().breakpoints.down('sm'))
 
   const handleScrollToHopeSection = event => {
     const anchor = (event.target.ownerDocument || document).querySelector(

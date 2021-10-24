@@ -27,7 +27,7 @@ const NewsLetterDialog = ({ open, setOpen }) => {
 
   const [openSnack, setOpenSnack] = useState(false)
 
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
+  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'))
 
   const handleClose = () => {
     setOpen(false)

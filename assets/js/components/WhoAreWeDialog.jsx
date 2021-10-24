@@ -22,7 +22,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const WhoAreWeDialog = ({ open, setOpen }) => {
   const theme = useTheme()
 
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
+  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'))
 
   const handleClose = () => {
     setOpen(false)

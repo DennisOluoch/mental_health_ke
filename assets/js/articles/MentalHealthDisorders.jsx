@@ -8,7 +8,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: '16px',
     lineHeight: '32px',
     color: '#292929',
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '21px',
     },
     fontFamily: [

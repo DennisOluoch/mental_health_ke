@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     bottom: '-30%',
     left: '22%',
     padding: '10px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       width: 'auto',
       left: 0,
       right: 0,
@@ -32,15 +32,16 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#23278a',
     backgroundBlendMode: 'difference',
     position: 'relative',
-    [theme.breakpoints.down('md')]: {
-      display: 'none',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      marginBottom: '20px',
     },
   },
 
   info: {
     margin: '20px 25px',
     width: '60%',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       margin: 0,
       width: 'auto',
     },
@@ -138,7 +139,7 @@ const VideoPaper = () => {
                 startIcon={<PlayArrow htmlColor="white" fontSize="medium" />}
                 onClick={() => setOpenVideoDialog(true)}
               >
-                Watch this episode
+                Watch episode
               </ContainedBlueButton>
               <Typography
                 variant="body2"

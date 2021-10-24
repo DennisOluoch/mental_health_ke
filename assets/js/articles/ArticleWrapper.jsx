@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   title: {
     color: '#292929',
     fontSize: '1.8rem',
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '45px',
       lineHeight: '60px',
     },
@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
       fontSize: '16px',
       lineHeight: '32px',
       color: '#292929',
-      [theme.breakpoints.up('md')]: {
+      [theme.breakpoints.up('sm')]: {
         fontSize: '21px',
       },
       fontFamily: [

@@ -14,7 +14,7 @@ import intro101 from '../../images/101.jpg'
 const useStyles = makeStyles(theme => ({
   container: {
     marginTop: '250px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       marginTop: '50px',
     },
   },

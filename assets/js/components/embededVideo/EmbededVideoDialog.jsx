@@ -16,7 +16,7 @@ const EmbededVideoDialog = ({ open, setOpen }) => {
 
   const [loadingVideo, setLoadingVideo] = useState(true)
 
-  const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
+  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'))
 
   const handleClose = () => {
     setLoadingVideo(true)

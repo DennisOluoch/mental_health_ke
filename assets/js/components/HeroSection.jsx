@@ -9,12 +9,12 @@ import VideoPaper from './embededVideo/VideoPaper'
 
 const useStyles = makeStyles(theme => ({
   lightBlueBlock: {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
   },
   patterns: {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
   },
@@ -29,19 +29,19 @@ const useStyles = makeStyles(theme => ({
     width: '50%',
     zIndex: 1,
     left: '-20px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
   },
 
   heroWords: {
-    width: '75%',
-    [theme.breakpoints.down('md')]: {
+    width: '80%',
+    [theme.breakpoints.down('sm')]: {
       width: '100%',
     },
   },
   hideVideoPaper: {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
   },

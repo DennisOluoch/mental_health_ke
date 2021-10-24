@@ -4,7 +4,7 @@ import React from 'react'
 
 const useStyles = makeStyles(theme => ({
   wordSize: {
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: '1.6rem',
     },
   },

@@ -6,7 +6,7 @@ import SecondaryAppButton from './SecondaryAppButton'
 
 const useStyles = makeStyles(theme => ({
   title: {
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '4.5rem',
       width: '70%',
     },
@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: '20px',
     color: 'white',
     textAlign: 'center',
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '1.5rem',
       width: '70%',
     },
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundBlendMode: 'color-burn',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       height: 'unset',
     },
   },
