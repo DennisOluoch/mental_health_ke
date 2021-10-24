@@ -37,10 +37,11 @@ const StoryOfHope = () => {
         But, the help received from my new support network, my family, friends
         and close colleagues offering to just be there to listen when I am low,
         was overwhelming. My best friend and close family are in contact
-        regularly, by phone and in person. At work my manager helps me on a one
-        to one basis and supported me in accessing the University’s Guidance and
-        Counselling Service. I felt apprehensive about this, but the staff have
-        been supportive and the counselling sessions have helped me immensely.
+        regularly, by phone and in person. At campus some of my friends helped
+        me on a one to one basis and supported me in accessing the University’s
+        Guidance and Counselling Service. I felt apprehensive about this, but
+        the staff have been supportive and the counselling sessions have helped
+        me immensely.
       </Typography>
       <Typography>
         Personally, the key for me has very much been to be more open and honest
