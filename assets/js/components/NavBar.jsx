@@ -57,7 +57,7 @@ const NavBar = () => {
             <img
               src={smallScreen ? smallScreenLogo : logo}
               alt="maseno-mental-ke-logo"
-              width={smallScreen ? 45 : 200}
+              width={smallScreen ? 40 : 200}
             />
           </Link>
         </Typography>
@@ -67,7 +67,7 @@ const NavBar = () => {
               <Box className={classes.navLink}>Home</Box>
             </Link>
             <Box
-              mx="20px"
+              mx="15px"
               className={classes.navLink}
               onClick={() => setOpenDialog(true)}
             >
