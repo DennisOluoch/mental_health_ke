@@ -1,5 +1,6 @@
 import {
   Button,
+  CircularProgress,
   Dialog,
   DialogActions,
   DialogContent,
@@ -7,15 +8,18 @@ import {
   useMediaQuery,
   useTheme,
 } from '@material-ui/core'
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 const EmbededVideoDialog = ({ open, setOpen }) => {
   const theme = useTheme()
 
+  const [loadingVideo, setLoadingVideo] = useState(true)
+
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'))
 
   const handleClose = () => {
+    setLoadingVideo(true)
     setOpen(false)
   }
 
@@ -30,7 +34,23 @@ const EmbededVideoDialog = ({ open, setOpen }) => {
       <DialogTitle id="responsive-dialog-title">
         Mental Health Testimonial. Episode 1
       </DialogTitle>
-      <DialogContent>
+      <DialogContent
+        style={{
+          position: 'relative',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        {loadingVideo && (
+          <CircularProgress
+            color="secondary"
+            size={50}
+            thickness={5}
+            style={{ position: 'absolute' }}
+          />
+        )}
         <iframe
           width={fullScreen ? 320 : 560}
           height={fullScreen ? 200 : 315}
@@ -39,6 +59,8 @@ const EmbededVideoDialog = ({ open, setOpen }) => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
           allowFullScreen
+          loading="lazy"
+          onLoad={() => setLoadingVideo(false)}
         />
       </DialogContent>
       <DialogActions>
