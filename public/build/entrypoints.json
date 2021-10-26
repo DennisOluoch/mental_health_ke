@@ -3,12 +3,12 @@
     "index": {
       "js": [
         "/build/45.b8e29416.js",
-        "/build/index.936d8aa0.js"
+        "/build/index.631adb21.js"
       ]
     }
   },
   "integrity": {
     "/build/45.b8e29416.js": "sha384-62rh3/iT41TsRr5awceMuqTr6srteF+4T3+EG2lbLMM+zApacgsVBYia/5EMcUmd",
-    "/build/index.936d8aa0.js": "sha384-GC42R7OmZbkYcUl7pf6ct24ocFdrMXProJ+2oZrXC0Wzhqb77irf9ppws747A30e"
+    "/build/index.631adb21.js": "sha384-nvN3hWDEKzakdxiCS+L5W4kUdhs2uicJKgAHy4D7YQ+fIVyFNKfOrDD+qCNswFeX"
   }
 }

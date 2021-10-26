@@ -221,7 +221,7 @@ const HeroSection = () => {
                       </a>
                     </Typography>
                   </Box>
-                  <Box display="flex" alignItems="center" mx="20px">
+                  <Box display="flex" alignItems="center" mx="10px">
                     <Twitter htmlColor="white" fontSize="medium" />
                     <Typography style={{ marginLeft: '5px' }}>
                       <a
