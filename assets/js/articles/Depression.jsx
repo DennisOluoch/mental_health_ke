@@ -2,6 +2,9 @@ import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import depressionPhoto from '../../images/depression-article.jpg'
+import PullQuote from './components/PullQuote'
+import ArticleImage from './components/ArticleImage'
+import anotherPhoto from '../../images/depression-article-2.jpg'
 
 const Depression = () => {
   return (
@@ -36,6 +39,11 @@ const Depression = () => {
         deadlines and expectations. This slowly messes up with most
         students&apos; mental health.
       </Typography>
+      <PullQuote>
+        All parents want to see their children succeed in life hence put too
+        much pressure on them and at the same time the children are pressuring
+        themselves to succeed in academics.
+      </PullQuote>
       <Typography>
         In this new era of technological advancement, a lot goes on on social
         media. Most university students are more or less addicted to social
@@ -68,6 +76,7 @@ const Depression = () => {
         schooling and business. Others their businesses barely thrive. In both
         scenarios the students are not in the right state of mind.
       </Typography>
+      <ArticleImage photo={anotherPhoto} />
       <Typography>
         Dealing with mental illness in the universities should be a top
         priority. Creating awareness on mental disorders, the signs, causes and

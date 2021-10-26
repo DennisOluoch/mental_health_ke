@@ -2,6 +2,7 @@ import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import photo from '../../images/mood-article.jpg'
+import PullQuote from './components/PullQuote'
 
 const MoodDisorder = () => {
   return (
@@ -32,6 +33,11 @@ const MoodDisorder = () => {
         others can oversleep when depressed. Depression can make one feel tired
         all the time hence not ready to do anything.
       </Typography>
+      <PullQuote>
+        These are feelings that leaves someone sad or depressed, some people
+        experience depression as feeling or having no feelings. Depression can
+        make one feel irritable, hopeless and guilty
+      </PullQuote>
       <Typography variant="h5">Seasonal affective disorder</Typography>
       <Typography>
         This is a type of depression that is affected by the seasons. It mostly

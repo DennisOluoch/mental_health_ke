@@ -2,6 +2,7 @@ import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import photo from '../../images/mental-support-article.jpg'
+import PullQuote from './components/PullQuote'
 
 const MentalSupport = () => {
   return (
@@ -25,6 +26,10 @@ const MentalSupport = () => {
         access to care remains substantial. Effective treatment coverage remains
         extremely low.
       </Typography>
+      <PullQuote>
+        Despite some progress, people with mental health conditions often
+        experience severe human rights violations, discrimination and stigma
+      </PullQuote>
       <Typography>
         Increasing investment is required on all fronts for mental health
         awareness and to increase understanding and also to reduce stigma. On

@@ -2,6 +2,7 @@ import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import photo from '../../images/anxiety-article.jpg'
+import PullQuote from './components/PullQuote'
 
 const AnxietyDisorder = () => {
   return (
@@ -19,12 +20,17 @@ const AnxietyDisorder = () => {
       <Typography>
         But an anxiety disorder goes beyond the regular nervousness and slight
         fear you may feel from time to time. An anxiety disorder happens when;
-        Anxiety interferes with your ability to function, You often overreact
-        when something triggers your emotions, You can’t control your responses
-        to situations,Anxiety disorders can make it difficult to get through the
+        it interferes with your ability to function, you often overreact when
+        something triggers your emotions and you can’t control your responses to
+        situations. Anxiety disorders can make it difficult to get through the
         day. Fortunately, there are several effective treatments for anxiety
         disorders.
       </Typography>
+      <PullQuote>
+        An anxiety disorder happens when; it interferes with your ability to
+        function, you often overreact when something triggers your emotions and
+        you can’t control your responses to situations
+      </PullQuote>
       <Typography variant="h6">
         Who is at risk for anxiety disorders?
       </Typography>

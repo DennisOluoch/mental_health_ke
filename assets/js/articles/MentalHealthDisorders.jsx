@@ -2,6 +2,11 @@ import { Box, List, Typography, makeStyles } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import photo from '../../images/intro-101-article.jpg'
+import PullQuote from './components/PullQuote'
+import anotherPhoto from '../../images/eating-disorders-article.jpg'
+import ArticleImage from './components/ArticleImage'
+import yetAnotherPhoto from '../../images/emotions-article.jpg'
+import anxietyPhoto from '../../images/anxiety-chum.jpg'
 
 const useStyles = makeStyles(theme => ({
   paragraph: {
@@ -39,6 +44,10 @@ const MentalHealthDisorders = () => {
         suffer from mental disorders often than not abuse alcohol and other
         drugs to lessen the symptoms of mental illness.
       </Typography>
+      <PullQuote>
+        Studies have shown that up to 50% who require mental health services are
+        also involved in substance abuse problems.
+      </PullQuote>
       <Typography variant="h5">Schizoaffective Disorder</Typography>
       <Typography>
         An individual is diagnosed with this disorder when they have both a mood
@@ -61,43 +70,44 @@ const MentalHealthDisorders = () => {
       </Typography>
       <Typography>Signs and symptoms of psychosis:</Typography>
       <List>
-        <ol>
+        <ol className={classes.paragraph}>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>Anxiety</Typography>
-          </li>
-          <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
-              {' '}
-              Social withdrawal{' '}
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
+              Anxiety
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
+              Social withdrawal
+            </Typography>
+          </li>
+          <li>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Sleep disturbance
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Reduced drive and motivation
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Behavioural changes
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Irritability
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Disorganized thinking
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Hallucinations
             </Typography>
           </li>
@@ -110,6 +120,7 @@ const MentalHealthDisorders = () => {
         situational circumstances, heightened and continuing response to a
         perceived threat. Types of anxiety disorders:
       </Typography>
+      <ArticleImage photo={anxietyPhoto} />
       <Box my="15px" pl="20px">
         <Typography variant="h6">General Anxiety</Typography>
         <Typography className={classes.paragraph}>
@@ -140,6 +151,7 @@ const MentalHealthDisorders = () => {
           It is the re-experiencing of a traumatic event for a long period of
           time.
         </Typography>
+        <ArticleImage photo={yetAnotherPhoto} />
       </Box>
       <Typography variant="h5">Schizophrenia</Typography>
       <Typography>
@@ -151,33 +163,35 @@ const MentalHealthDisorders = () => {
         It affects about one out of every 100 people. Common symptoms;
       </Typography>
       <List>
-        <ol>
+        <ol className={classes.paragraph}>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
-              Hearing voices may affect all the senses{' '}
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
+              Hearing voices may affect all the senses
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>Paranoia </Typography>
-          </li>
-          <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
-              Religious preoccupation{' '}
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
+              Paranoia
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
+              Religious preoccupation
+            </Typography>
+          </li>
+          <li>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Thinking that you can control someone’s thoughts or that some is
               controlling your thoughts.
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Disjointed thoughts.
             </Typography>
           </li>
           <li>
-            <Typography style={{ fontFamily: 'inherit' }}>
+            <Typography style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
               Righteousness
             </Typography>
           </li>
@@ -199,6 +213,7 @@ const MentalHealthDisorders = () => {
           Binge eating accompanied by self-inducing vomit
         </Typography>
       </Box>
+      <ArticleImage photo={anotherPhoto} />
       <Typography variant="h5">Treatment and Recovery</Typography>
       <Typography>
         Actions to be taken for any mental illness whether or not it is

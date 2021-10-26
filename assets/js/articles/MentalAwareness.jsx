@@ -2,6 +2,7 @@ import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import photo from '../../images/mindfullness-article.jpg'
+import PullQuote from './components/PullQuote'
 
 const MentalAwareness = () => {
   return (
@@ -22,6 +23,12 @@ const MentalAwareness = () => {
         Having a long-term physical health condition Unemployment or losing your
         job
       </Typography>
+      <PullQuote>
+        Mental health awareness increases the chances for early
+        intervention,which can result in a fast recovery. Awareness reduces
+        negative adjectives that have been set to describe our people with a
+        mental illness
+      </PullQuote>
       <Typography>
         The main warning signs of mental illness are as follows: Excessive
         paranoia,worry, or anxiety. Long-lasting sadness or irritability.
@@ -68,7 +75,7 @@ const MentalAwareness = () => {
         anything you can do to suport them.
       </Typography>
       <Typography>
-        Increased investment is requird on all fronts:for mental health
+        Increased investment is requird on all fronts: for mental health
         awareness to increase understanding and reduce stigma,for efforts to
         increase access to quality mental health care snd effective treatments
         and for research to identify new treatments and improve existing

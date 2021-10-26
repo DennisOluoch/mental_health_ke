@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   content: {
-    '& > p, li': {
+    '& > p': {
       fontSize: '16px',
       lineHeight: '32px',
       color: '#292929',
@@ -162,7 +162,11 @@ const ArticleWrapper = ({ children, themePhoto }) => {
             <img
               src={themePhoto}
               alt=""
-              style={{ width: '100%', objectFit: 'cover' }}
+              style={{
+                width: '100%',
+                objectFit: 'cover',
+                marginBottom: '20px',
+              }}
             />
           )}
           <Box pt="10px" className={classes.content}>

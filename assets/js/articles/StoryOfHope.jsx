@@ -1,10 +1,14 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
+import photo from '../../images/support-article.jpg'
+import PullQuote from './components/PullQuote'
+import anotherPhoto from '../../images/another-support-article.jpg'
+import ArticleImage from './components/ArticleImage'
 
 const StoryOfHope = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper themePhoto={photo}>
       <Typography>
         When people look at me they would see a typical 20 something University
         student, who may come across as a bit reserved, quiet, thoughtful and is
@@ -52,6 +56,11 @@ const StoryOfHope = () => {
         means to recognise behaviours, derive at therapies and to help towards
         finding a forward facing direction.
       </Typography>
+      <PullQuote>
+        I cannot emphasis enough the importance of getting a trusted support
+        network and accessing professional services when needed. Without them I
+        honestly don’t think I would still be here
+      </PullQuote>
       <Typography>
         Even with help it’s a difficult uphill struggle. At times, I feel like I
         keep starting over again. At the time of writing I was going through a
@@ -64,6 +73,7 @@ const StoryOfHope = () => {
         fix, it’s a long game, with hurdles along the way and I just kept
         picking myself up to move on.
       </Typography>
+      <ArticleImage photo={anotherPhoto} />
       <Typography>
         I cannot emphasis enough the importance of getting a trusted support
         network and accessing professional services when needed. Without them I

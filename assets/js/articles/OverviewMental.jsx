@@ -2,6 +2,7 @@ import { Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import photo from '../../images/mental-problems-article.jpg'
+import PullQuote from './components/PullQuote'
 
 const OverviewMental = () => {
   return (
@@ -63,6 +64,9 @@ const OverviewMental = () => {
         teens. Loss of interest in most activities that one used to participate
         in.
       </Typography>
+      <PullQuote>
+        Mental awareness is key in one’s growth in all aspects
+      </PullQuote>
       <Typography>
         With the above overview, we can agree that at a certain point in life,
         we experienced either of those if not all but paid little or no

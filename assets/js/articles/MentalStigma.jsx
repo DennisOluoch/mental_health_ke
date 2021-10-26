@@ -1,9 +1,27 @@
-import { List, Typography } from '@material-ui/core'
+import { List, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import ArticleWrapper from './ArticleWrapper'
 import mentalHelpPhoto from '../../images/mental-help-article.jpg'
+import PullQuote from './components/PullQuote'
+import anotherPhoto from '../../images/mental-help-article-2.jpg'
+import ArticleImage from './components/ArticleImage'
+
+const useStyles = makeStyles(theme => ({
+  list: {
+    '& > *': {
+      fontSize: '16px',
+      lineHeight: '32px',
+      color: '#292929',
+      [theme.breakpoints.up('sm')]: {
+        fontSize: '21px',
+      },
+    },
+  },
+}))
 
 const MentalStigma = () => {
+  const classes = useStyles()
+
   return (
     <ArticleWrapper themePhoto={mentalHelpPhoto}>
       <Typography>
@@ -11,24 +29,32 @@ const MentalStigma = () => {
         treatment from health care staff. Factors increasing the likelihood of
         treatment avoidance or delay include:
         <List>
-          <ol>
+          <ol className={classes.list}>
             <li>
-              <Typography style={{ fontFamily: 'inherit' }}>
+              <Typography
+                style={{ fontFamily: 'inherit', fontSize: 'inherit' }}
+              >
                 Lack of knowledge to identify features of mental illness
               </Typography>
             </li>
             <li>
-              <Typography style={{ fontFamily: 'inherit' }}>
+              <Typography
+                style={{ fontFamily: 'inherit', fontSize: 'inherit' }}
+              >
                 Ignorance about how to access treatment
               </Typography>
             </li>
             <li>
-              <Typography style={{ fontFamily: 'inherit' }}>
+              <Typography
+                style={{ fontFamily: 'inherit', fontSize: 'inherit' }}
+              >
                 Prejudice against people who have mental illness
               </Typography>
             </li>
             <li>
-              <Typography style={{ fontFamily: 'inherit' }}>
+              <Typography
+                style={{ fontFamily: 'inherit', fontSize: 'inherit' }}
+              >
                 Expectations of discrimination against people diagnosed with
                 mental illness
               </Typography>
@@ -64,6 +90,11 @@ const MentalStigma = () => {
         attitudes, tended to have lower rates of self stigma and perceived
         discrimination.
       </Typography>
+      <PullQuote>
+        Addressing public stigma might reduce experienced and anticipated stigma
+        among service users and facilitate help seeking and engagement with
+        mental health care.
+      </PullQuote>
       <Typography>
         See globally, however, stigmatizing attitudes persist among the public
         and have been shown to be prevalent and associated with a reluctance to
@@ -109,6 +140,7 @@ const MentalStigma = () => {
         disorders are considered mental illnesses, which is associated with help
         seeking intentions from a primary care physician.
       </Typography>
+      <ArticleImage photo={anotherPhoto} />
       <Typography>
         Intentions to seek help for a mental health problem are associated with
         attitudes of tolerance and support for community care, but not with
