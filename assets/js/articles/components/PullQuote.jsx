@@ -6,6 +6,7 @@ const useStyles = makeStyles(theme => ({
   sizing: {
     fontStyle: 'italic',
     textAlign: 'center',
+    fontSize: '1.2rem',
     [theme.breakpoints.up('sm')]: {
       fontSize: '2rem',
     },
