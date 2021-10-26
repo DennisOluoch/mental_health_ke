@@ -151,8 +151,9 @@ const MentalHealthDisorders = () => {
           It is the re-experiencing of a traumatic event for a long period of
           time.
         </Typography>
-        <ArticleImage photo={yetAnotherPhoto} />
       </Box>
+      <ArticleImage photo={yetAnotherPhoto} />
+
       <Typography variant="h5">Schizophrenia</Typography>
       <Typography>
         It is caused by a chemical disturbance of the brains functioning. Thus,
