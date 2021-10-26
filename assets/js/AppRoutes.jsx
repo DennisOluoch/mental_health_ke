@@ -16,6 +16,7 @@ import HeroSection from './components/HeroSection'
 import SecondSection from './components/SecondSection'
 import ThirdSection from './components/ThirdSection'
 import Privacy from './privacy/Privacy'
+import Terms from './terms/Terms'
 
 const AppRoutes = () => {
   return (
@@ -70,6 +71,7 @@ const AppRoutes = () => {
       />
       <Route path="/article/stories-of-hope-1" element={<StoryOfHope />} />
       <Route path="/privacy-policy" element={<Privacy />} />
+      <Route path="/terms" element={<Terms />} />
     </Routes>
   )
 }

@@ -37,6 +37,12 @@ const Footer = () => {
             style={{ display: 'flex', alignItems: 'center' }}
           >
             <Box color="white" mr="15px">
+              <Link to="/terms" style={{ color: 'inherit' }}>
+                Terms
+              </Link>
+            </Box>
+
+            <Box color="white" mr="15px">
               <Link to="/privacy-policy" style={{ color: 'inherit' }}>
                 Privacy policy
               </Link>
