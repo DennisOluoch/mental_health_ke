@@ -2,9 +2,13 @@
   "entrypoints": {
     "index": {
       "js": [
-        "/build/vendors-node_modules_material-ui_core_esm_AppBar_AppBar_js-node_modules_material-ui_core_esm_-c8cbc1.js",
-        "/build/index.js"
+        "/build/45.b8e29416.js",
+        "/build/index.2059f68b.js"
       ]
     }
+  },
+  "integrity": {
+    "/build/45.b8e29416.js": "sha384-62rh3/iT41TsRr5awceMuqTr6srteF+4T3+EG2lbLMM+zApacgsVBYia/5EMcUmd",
+    "/build/index.2059f68b.js": "sha384-pJHBhbOtPPWhoKYZaKIPYrfL34rC44mRjtAMUEjJUtzb7RloeAm5AH0/Vge8vBAZ"
   }
 }
