@@ -26,11 +26,27 @@ const Footer = () => {
           justifyContent="space-between"
           flexWrap="wrap"
         >
-          <Typography variant="body2">
-            <Box color="white">
-              &copy; 2021 MasenoMentalKe - Valhalla Media Group
-            </Box>
-          </Typography>
+          <Box display="flex" alignItems="center" flexGrow={1} flexWrap="wrap">
+            <Typography variant="body2">
+              <Box color="white">
+                &copy; 2021 MasenoMentalKe - Valhalla Media Group.
+              </Box>
+            </Typography>
+            <Typography
+              variant="body2"
+              style={{ marginLeft: '5px', marginRight: '5px' }}
+            >
+              <Box color="white">
+                Need a website? Contact Olal Dennis
+                <a
+                  href="mailto:olaldennis@gmail.com"
+                  style={{ color: 'inherit' }}
+                >
+                  &lt;olaldennis@gmail.com&gt;
+                </a>
+              </Box>
+            </Typography>
+          </Box>
           <Typography
             variant="body2"
             component="div"
